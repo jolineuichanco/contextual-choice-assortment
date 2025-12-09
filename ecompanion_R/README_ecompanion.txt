@@ -28,16 +28,16 @@ ecompanion_R/
 ├── ComparePrices.R               # Section EC6: gamma_0 = gamma_k scenario
 ├── ComparePrices2.R              # Section EC6: gamma_0 < gamma_k scenario
 ├── ComparePrices3.R              # Section EC6: gamma_0 > gamma_k scenario
-├── Analyzing_Outputs.R           # Aggregates results for Table EC.7
-├── Analyzing_Outputs2.R          # Aggregates results for Table EC.9
-├── Analyzing_Outputs3.R          # Aggregates results for Table EC.8
+├── Analyzing_Outputs.R           # Aggregates results for Table EC.9
+├── Analyzing_Outputs2.R          # Aggregates results for Table EC.11
+├── Analyzing_Outputs3.R          # Aggregates results for Table EC.10
 ├── Results/                      # Output folder for gamma_equal scenario
 ├── Results2gamma0lessgammak/     # Output folder for gamma0_smaller scenario
 ├── Results3gamma0greatergammak/  # Output folder for gamma0_larger scenario
 └── reference_outputs/            # Pre-computed results for verification
-    ├── summary_table.csv         # Expected output for Table EC.7
-    ├── summary_table2.csv        # Expected output for Table EC.9
-    └── summary_table3.csv        # Expected output for Table EC.8
+    ├── summary_table.csv         # Expected output for Table EC.9
+    ├── summary_table2.csv        # Expected output for Table EC.11
+    └── summary_table3.csv        # Expected output for Table EC.10
 
 ================================================================================
 INPUT DATA (FROM PYTHON SCRIPTS)
@@ -65,7 +65,7 @@ Input file format:
   where: <N> is "05", "10", or "20"; <K> is "1", "3", or "5"
 
 ================================================================================
-SECTION EC5.5: ALGORITHM 2 PERFORMANCE (Tables EC.4 and EC.5)
+SECTION EC5.5: ALGORITHM 2 PERFORMANCE (Tables EC.7 and EC.8)
 ================================================================================
 
 ##### File: GridSearch.R
@@ -108,7 +108,7 @@ SECTION EC6: JOINT ASSORTMENT AND PRICING COMPARISONS
 Three parallel workflows for different gamma parameter scenarios:
 
 --------------------------------------------------------------------------------
-Scenario 1: gamma_0 = gamma_k (Table EC.7)
+Scenario 1: gamma_0 = gamma_k (Table EC.9)
 --------------------------------------------------------------------------------
 
 ##### File: ComparePrices.R
@@ -129,10 +129,10 @@ INPUTS:
 - All files in Results/ folder
 
 OUTPUTS:
-- summary_table.csv → Table EC.7
+- summary_table.csv → Table EC.9
 
 --------------------------------------------------------------------------------
-Scenario 2: gamma_0 < gamma_k (Table EC.9)
+Scenario 2: gamma_0 < gamma_k (Table EC.11)
 --------------------------------------------------------------------------------
 
 ##### File: ComparePrices2.R
@@ -153,10 +153,10 @@ INPUTS:
 - All files in Results2gamma0lessgammak/ folder
 
 OUTPUTS:
-- summary_table2.csv → Table EC.9
+- summary_table2.csv → Table EC.11
 
 --------------------------------------------------------------------------------
-Scenario 3: gamma_0 > gamma_k (Table EC.8)
+Scenario 3: gamma_0 > gamma_k (Table EC.10)
 --------------------------------------------------------------------------------
 
 ##### File: ComparePrices3.R
@@ -177,7 +177,7 @@ INPUTS:
 - All files in Results3gamma0greatergammak/ folder
 
 OUTPUTS:
-- summary_table3.csv → Table EC.8
+- summary_table3.csv → Table EC.10
 
 ================================================================================
 CORE FUNCTIONS IN COMPAREPRICES SCRIPTS
@@ -274,9 +274,9 @@ The reference_outputs/ folder contains pre-computed summary tables that can be
 used to verify your results:
 
   reference_outputs/
-  ├── summary_table.csv    # Expected output for Table EC.7 (gamma_0 = gamma_k)
-  ├── summary_table2.csv   # Expected output for Table EC.9 (gamma_0 < gamma_k)
-  └── summary_table3.csv   # Expected output for Table EC.8 (gamma_0 > gamma_k)
+  ├── summary_table.csv    # Expected output for Table EC.9 (gamma_0 = gamma_k)
+  ├── summary_table2.csv   # Expected output for Table EC.11 (gamma_0 < gamma_k)
+  └── summary_table3.csv   # Expected output for Table EC.10 (gamma_0 > gamma_k)
 
 After running the full pipeline, compare your generated summary_table*.csv files 
 against these reference outputs. Results should match exactly (or within small 
