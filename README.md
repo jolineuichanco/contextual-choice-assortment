@@ -5,6 +5,7 @@
 This repository contains the code and data required to reproduce the numerical experiments in:
 
 > **"Assortment and Price Optimization Under a Multi-Attribute (Contextual) Choice Model"**  
+> Sajjad Najafi, Stefanus Jasin, Joline Uichanco, and Jinglong Zhao  
 > *Operations Research* (forthcoming)
 
 ## Overview
@@ -114,23 +115,25 @@ source("Analyzing_Outputs.R")    # Generate summary tables
 
 | Experiment | Output | Paper Reference |
 |------------|--------|-----------------|
-| Section 6.2 | `section62_results/*/CC_opt_assortment_*.csv` | Table 1 |
-| Section 6.2 | `section62_results/*/MNL_opt_assortment_*.csv` | Table 1 |
-| Section 6.3 | `section63_results/CC_opt_assortment_*_[eta]eta.csv` | Table 2 |
-| Section 6.3 | `section63_results/MLA_heuristic_assortment_*_[eta]eta.csv` | Table 2 |
-| Section EC5.5 | Console output | Tables EC.4, EC.5 |
-| Section EC6 | `ecompanion_R/reference_outputs/summary_table*.csv` | Tables EC.7-EC.9 |
+| Section 6.2 (γ₀ = γₖ) | `section62_results/gamma_equal/*.csv` | Table EC.2 |
+| Section 6.2 (γ₀ > γₖ) | `section62_results/gamma0_larger/*.csv` | Table EC.3 |
+| Section 6.2 (γ₀ < γₖ) | `section62_results/gamma0_smaller/*.csv` | Table EC.4 |
+| Section 6.3 | `section63_results/*_[eta]eta.csv` | Table EC.5 |
+| Section EC5.5 | Console output (GridSearch.R) | Tables EC.7, EC.8 |
+| Section EC6 (γ₀ = γₖ) | `ecompanion_R/reference_outputs/summary_table.csv` | Table EC.9 |
+| Section EC6 (γ₀ > γₖ) | `ecompanion_R/reference_outputs/summary_table3.csv` | Table EC.10 |
+| Section EC6 (γ₀ < γₖ) | `ecompanion_R/reference_outputs/summary_table2.csv` | Table EC.11 |
 
 ## Citation
 
 If you use this code, please cite:
 
 ```bibtex
-@article{,
+@article{najafi2025assortment,
   title={Assortment and Price Optimization Under a Multi-Attribute (Contextual) Choice Model},
-  author={},
+  author={Najafi, Sajjad and Jasin, Stefanus and Uichanco, Joline and Zhao, Jinglong},
   journal={Operations Research},
-  year={},
+  year={2025},
   note={Forthcoming}
 }
 ```
@@ -141,4 +144,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For questions about this repository, please contact the authors or open an issue.
+For questions about this repository, please open an issue or contact Joline Uichanco (joline.uichanco@nyu.edu).
