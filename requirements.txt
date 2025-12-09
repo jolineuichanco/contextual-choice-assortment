@@ -1,0 +1,10 @@
+# Python dependencies for reproducibility package
+# Note: CPLEX must be installed separately with a valid license
+
+numpy>=1.20
+scipy>=1.7
+pandas>=1.3
+pylogit>=1.0
+
+# CPLEX Python API (install separately from IBM)
+# See: https://www.ibm.com/docs/en/icos/22.1.0?topic=cplex-setting-up-python-api
