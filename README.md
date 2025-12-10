@@ -36,6 +36,9 @@ This paper studies assortment and pricing optimization under a contextual choice
 │   └── gamma0_larger/
 │
 ├── section62_results/            # Section 6.2 output files
+│   ├── gamma_equal/
+│   ├── gamma0_smaller/
+│   └── gamma0_larger/
 │
 ├── section63_instances/          # Section 6.3 parameter files
 │
