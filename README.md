@@ -6,7 +6,6 @@ This repository contains the code and data required to reproduce the numerical e
 
 > **"Assortment and Price Optimization Under a Multi-Attribute (Contextual) Choice Model"**  
 > Sajjad Najafi, Stefanus Jasin, Joline Uichanco, and Jinglong Zhao  
-> *Operations Research* (forthcoming)
 
 ## Overview
 
@@ -129,12 +128,11 @@ source("Analyzing_Outputs.R")    # Generate summary tables
 If you use this code, please cite:
 
 ```bibtex
-@article{najafi2025assortment,
+@unpublished{najafi2025assortment,
   title={Assortment and Price Optimization Under a Multi-Attribute (Contextual) Choice Model},
   author={Najafi, Sajjad and Jasin, Stefanus and Uichanco, Joline and Zhao, Jinglong},
-  journal={Operations Research},
   year={2025},
-  note={Forthcoming}
+  note={Working paper}
 }
 ```
 
