@@ -131,11 +131,12 @@ source("Analyzing_Outputs.R")    # Generate summary tables
 If you use this code, please cite:
 
 ```bibtex
-@unpublished{najafi2025assortment,
+@article{najafi2025assortment,
   title={Assortment and Price Optimization Under a Multi-Attribute (Contextual) Choice Model},
   author={Najafi, Sajjad and Jasin, Stefanus and Uichanco, Joline and Zhao, Jinglong},
+  journal={Operations Research},
   year={2025},
-  note={Working paper}
+  note={Forthcoming}
 }
 ```
 
