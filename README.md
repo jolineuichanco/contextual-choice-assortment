@@ -135,7 +135,7 @@ If you use this code, please cite:
   title={Assortment and Price Optimization Under a Multi-Attribute (Contextual) Choice Model},
   author={Najafi, Sajjad and Jasin, Stefanus and Uichanco, Joline and Zhao, Jinglong},
   journal={Operations Research},
-  year={2025},
+  year={2026},
   note={Forthcoming}
 }
 ```
